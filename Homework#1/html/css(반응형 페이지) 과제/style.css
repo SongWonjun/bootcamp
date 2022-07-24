@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  font-family: 나눔스퀘어, "NanumSquare", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+/* display : flex, position : sticky 가 같이 있으면 working 하지 않음 */
+
+.navbar .dummy {
+  width: 10%;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+
+.navbar .happybean_logo {
+  width: 150px;
+  color: #7fff00;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.row {
+  margin-top: 25px;
+  background-image: url(https://ssl.pstatic.net/happyimg2/img2/react/pc/statistics/bg_summary.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 675px;
+  /* position: relative; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fund_raised {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  color: #ffff;
+}
+
+.fund_raised span {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  font-family: "NanumSquareBold";
+  font-weight: bold;
+}
+
+.helpful {
+  color: #22da4a;
+}
+
+.donation {
+  text-align: center;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+  font-size: 47px;
+  padding-top: 15px;
+}
+
+.donation_image {
+  width: 100%;
+}
+
+.donation_image img {
+  height: 523px;
+}
+
+.funding_table {
+  width: 60%;
+  padding: 40px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #f0f0f1;
+  height: auto;
+}
+
+.amount_funding {
+  display: flex;
+  flex-direction: row;
+}
+
+.amount_funding div {
+  padding-bottom: 30px;
+  flex-basis: 50%;
+  font-size: 24px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+  font-weight: bold;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail div {
+  padding-top: 15px;
+  flex-basis: 50%;
+  font-size: 15px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+}
+
+.funding_l {
+  text-align: left;
+}
+
+.funding_r {
+  text-align: right;
+  color: #22da4a;
+}
+
+.amount_user {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  border-top: 1px solid #f0f0f1;
+}
+
+.amount_user div {
+  padding-top: 30px;
+  flex-basis: 50%;
+  font-size: 24px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+  font-weight: bold;
+}
+
+.organic {
+  width: 60%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #f0f0f1;
+}
+
+.organic_count {
+  border-right: 1px solid #f0f0f1;
+}
+
+.organic_count,
+.fundraiser {
+  padding: 10px;
+  display: flex;
+  flex-basis: 50%;
+  font-size: 24px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+  font-weight: bold;
+}
+
+.organic_count div,
+.fundraiser div {
+  flex-basis: 50%;
+}
+
+.organic_l {
+  text-align: left;
+}
+
+.organic_r {
+  text-align: right;
+  color: #22da4a;
+}
+
+.notice {
+  width: 60%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #f0f0f1;
+  display: flex;
+  font-size: 13px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+}
+
+.notice a {
+  text-decoration: none;
+}
+
+.alram {
+  padding: 30px;
+  flex-basis: 13%;
+}
+
+.campain_list {
+  padding: 30px;
+  flex-basis: 87%;
+  color: #556b2f;
+}
+
+.introduction {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.intro {
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+}
+
+.intro span {
+  width: 100px;
+  display: inline-block;
+}
+
+.business_warning {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.warning {
+  font-size: 12px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+  color: #807474;
+}
+
+.company {
+  font-size: 12px;
+  /* font-family: 나눔스퀘어, "NanumSquare", sans-serif; */
+  color: #807474;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 1250px;
+  }
+  .fund_raised span {
+    font-size: 45px;
+  }
+  .notice {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: 1250px;
+  }
+  .fund_raised span {
+    font-size: 45px;
+  }
+  .notice {
+    font-size: 10px;
+  }
+
+  .funding_table {
+    width: 90%;
+  }
+
+  .organic {
+    width: 90%;
+  }
+
+  .notice {
+    width: 90%;
+  }
+
+  .intro {
+    width: 90%;
+  }
+
+  .business_warning {
+    width: 90%;
+  }
+}
